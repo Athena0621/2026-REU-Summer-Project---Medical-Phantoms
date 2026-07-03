@@ -2,5 +2,4 @@ model.xml
 *.h5
 *.out
 *.png
-*.ipynb
 .ipynb_checkpoints/
