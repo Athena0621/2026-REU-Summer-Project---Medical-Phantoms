@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material id="1" name="m1">
+    <density value="1.92" units="g/cm3"/>
+    <nuclide name="H1" wo="0.036"/>
+    <nuclide name="C0" wo="0.159"/>
+    <nuclide name="N14" wo="0.042"/>
+    <nuclide name="O16" wo="0.448"/>
+    <nuclide name="Na23" wo="0.003"/>
+    <nuclide name="Mg24" wo="0.002"/>
+    <nuclide name="P31" wo="0.094"/>
+    <nuclide name="S32" wo="0.003"/>
+    <nuclide name="Ca40" wo="0.213"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="2" name="m2">
+    <density value="1.09" units="g/cm3"/>
+    <nuclide name="H1" wo="0.1"/>
+    <nuclide name="C0" wo="0.199"/>
+    <nuclide name="N14" wo="0.042"/>
+    <nuclide name="O16" wo="0.65"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.001"/>
+    <nuclide name="S32" wo="0.002"/>
+    <nuclide name="Cl35" wo="0.003"/>
+    <nuclide name="K39" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="3" name="m3">
+    <density value="0.385" units="g/cm3"/>
+    <nuclide name="H1" wo="0.103"/>
+    <nuclide name="C0" wo="0.107"/>
+    <nuclide name="N14" wo="0.032"/>
+    <nuclide name="O16" wo="0.746"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.003"/>
+    <nuclide name="Cl35" wo="0.003"/>
+    <nuclide name="K39" wo="0.002"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="4" name="m4">
+    <density value="1.05" units="g/cm3"/>
+    <nuclide name="H1" wo="0.107"/>
+    <nuclide name="C0" wo="0.144"/>
+    <nuclide name="N14" wo="0.022"/>
+    <nuclide name="O16" wo="0.713"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.004"/>
+    <nuclide name="S32" wo="0.002"/>
+    <nuclide name="Cl35" wo="0.003"/>
+    <nuclide name="K39" wo="0.003"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="5" name="m5">
+    <density value="1.05" units="g/cm3"/>
+    <nuclide name="H1" wo="0.107"/>
+    <nuclide name="C0" wo="0.144"/>
+    <nuclide name="N14" wo="0.022"/>
+    <nuclide name="O16" wo="0.713"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.004"/>
+    <nuclide name="S32" wo="0.002"/>
+    <nuclide name="Cl35" wo="0.003"/>
+    <nuclide name="K39" wo="0.003"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="6" name="m6">
+    <density value="1.03" units="g/cm3"/>
+    <nuclide name="H1" wo="0.09"/>
+    <nuclide name="C0" wo="0.47"/>
+    <nuclide name="N14" wo="0.017"/>
+    <nuclide name="O16" wo="0.341"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.022"/>
+    <nuclide name="S32" wo="0.002"/>
+    <nuclide name="Cl35" wo="0.001"/>
+    <nuclide name="Ca40" wo="0.046"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="7" name="m7">
+    <density value="1.05" units="g/cm3"/>
+    <nuclide name="H1" wo="0.102"/>
+    <nuclide name="C0" wo="0.131"/>
+    <nuclide name="N14" wo="0.031"/>
+    <nuclide name="O16" wo="0.724"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.003"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.003"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="8" name="m8">
+    <density value="1.05" units="g/cm3"/>
+    <nuclide name="H1" wo="0.103"/>
+    <nuclide name="C0" wo="0.125"/>
+    <nuclide name="N14" wo="0.031"/>
+    <nuclide name="O16" wo="0.73"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.002"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.002"/>
+    <nuclide name="Ca40" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="9" name="m9">
+    <density value="1.05" units="g/cm3"/>
+    <nuclide name="H1" wo="0.103"/>
+    <nuclide name="C0" wo="0.125"/>
+    <nuclide name="N14" wo="0.031"/>
+    <nuclide name="O16" wo="0.73"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.002"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.002"/>
+    <nuclide name="Ca40" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="10" name="m10">
+    <density value="1.04" units="g/cm3"/>
+    <nuclide name="H1" wo="0.105"/>
+    <nuclide name="C0" wo="0.096"/>
+    <nuclide name="N14" wo="0.026"/>
+    <nuclide name="O16" wo="0.761"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.002"/>
+    <nuclide name="Cl35" wo="0.003"/>
+    <nuclide name="K39" wo="0.003"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="11" name="m11">
+    <density value="1.03" units="g/cm3"/>
+    <nuclide name="H1" wo="0.105"/>
+    <nuclide name="C0" wo="0.235"/>
+    <nuclide name="N14" wo="0.028"/>
+    <nuclide name="O16" wo="0.622"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.003"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.002"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="12" name="m12">
+    <density value="1.05" units="g/cm3"/>
+    <nuclide name="H1" wo="0.104"/>
+    <nuclide name="C0" wo="0.138"/>
+    <nuclide name="N14" wo="0.029"/>
+    <nuclide name="O16" wo="0.719"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.002"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.003"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="13" name="m13">
+    <density value="1.04" units="g/cm3"/>
+    <nuclide name="H1" wo="0.104"/>
+    <nuclide name="C0" wo="0.118"/>
+    <nuclide name="N14" wo="0.025"/>
+    <nuclide name="O16" wo="0.745"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.001"/>
+    <nuclide name="S32" wo="0.001"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="14" name="m14">
+    <density value="1.04" units="g/cm3"/>
+    <nuclide name="H1" wo="0.104"/>
+    <nuclide name="C0" wo="0.118"/>
+    <nuclide name="N14" wo="0.025"/>
+    <nuclide name="O16" wo="0.745"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.001"/>
+    <nuclide name="S32" wo="0.001"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="15" name="m15">
+    <density value="1.04" units="g/cm3"/>
+    <nuclide name="H1" wo="0.104"/>
+    <nuclide name="C0" wo="0.118"/>
+    <nuclide name="N14" wo="0.025"/>
+    <nuclide name="O16" wo="0.745"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.001"/>
+    <nuclide name="S32" wo="0.001"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="16" name="m16">
+    <density value="1.03" units="g/cm3"/>
+    <nuclide name="H1" wo="0.104"/>
+    <nuclide name="C0" wo="0.222"/>
+    <nuclide name="N14" wo="0.028"/>
+    <nuclide name="O16" wo="0.636"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.003"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.002"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="17" name="m17">
+    <density value="1.04" units="g/cm3"/>
+    <nuclide name="H1" wo="0.103"/>
+    <nuclide name="C0" wo="0.112"/>
+    <nuclide name="N14" wo="0.032"/>
+    <nuclide name="O16" wo="0.743"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.002"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.003"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="18" name="m18">
+    <density value="1.05" units="g/cm3"/>
+    <nuclide name="H1" wo="0.105"/>
+    <nuclide name="C0" wo="0.157"/>
+    <nuclide name="N14" wo="0.024"/>
+    <nuclide name="O16" wo="0.705"/>
+    <nuclide name="Na23" wo="0.002"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.001"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.002"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="19" name="m19">
+    <density value="1.04" units="g/cm3"/>
+    <nuclide name="H1" wo="0.105"/>
+    <nuclide name="C0" wo="0.114"/>
+    <nuclide name="N14" wo="0.025"/>
+    <nuclide name="O16" wo="0.75"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.001"/>
+    <nuclide name="S32" wo="0.001"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.001"/>
+    <nuclide name="I127" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="20" name="m20">
+    <density value="0.95" units="g/cm3"/>
+    <nuclide name="H1" wo="0.114"/>
+    <nuclide name="C0" wo="0.589"/>
+    <nuclide name="N14" wo="0.007"/>
+    <nuclide name="O16" wo="0.287"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="S32" wo="0.001"/>
+    <nuclide name="Cl35" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="21" name="m21">
+    <density value="1.05" units="g/cm3"/>
+    <nuclide name="H1" wo="0.102"/>
+    <nuclide name="C0" wo="0.142"/>
+    <nuclide name="N14" wo="0.034"/>
+    <nuclide name="O16" wo="0.711"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.003"/>
+    <nuclide name="Cl35" wo="0.001"/>
+    <nuclide name="K39" wo="0.004"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="22" name="m22">
+    <density value="1.04" units="g/cm3"/>
+    <nuclide name="H1" wo="0.0993"/>
+    <nuclide name="C0" wo="0.461"/>
+    <nuclide name="N14" wo="0.005"/>
+    <nuclide name="O16" wo="0.42"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="23" name="m23">
+    <density value="1.1" units="g/cm3"/>
+    <nuclide name="H1" wo="0.0992"/>
+    <nuclide name="C0" wo="0.1937"/>
+    <nuclide name="N14" wo="0.0533"/>
+    <nuclide name="O16" wo="0.42"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="24" name="m24">
+    <density value="1.05" units="g/cm3"/>
+    <nuclide name="H1" wo="0.097"/>
+    <nuclide name="C0" wo="0.183"/>
+    <nuclide name="N14" wo="0.054"/>
+    <nuclide name="O16" wo="0.66"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.001"/>
+    <nuclide name="S32" wo="0.003"/>
+    <nuclide name="Cl35" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="25" name="m25">
+    <density value="1.04" units="g/cm3"/>
+    <nuclide name="H1" wo="0.103"/>
+    <nuclide name="C0" wo="0.112"/>
+    <nuclide name="N14" wo="0.032"/>
+    <nuclide name="O16" wo="0.743"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.002"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.003"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="26" name="m26">
+    <density value="1.03" units="g/cm3"/>
+    <nuclide name="H1" wo="0.104"/>
+    <nuclide name="C0" wo="0.228"/>
+    <nuclide name="N14" wo="0.028"/>
+    <nuclide name="O16" wo="0.63"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.002"/>
+    <nuclide name="S32" wo="0.003"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.002"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="27" name="m27">
+    <density value="1.04" units="g/cm3"/>
+    <nuclide name="H1" wo="0.105"/>
+    <nuclide name="C0" wo="0.114"/>
+    <nuclide name="N14" wo="0.025"/>
+    <nuclide name="O16" wo="0.75"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.001"/>
+    <nuclide name="S32" wo="0.001"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="28" name="m28">
+    <density value="1.04" units="g/cm3"/>
+    <nuclide name="H1" wo="0.105"/>
+    <nuclide name="C0" wo="0.114"/>
+    <nuclide name="N14" wo="0.025"/>
+    <nuclide name="O16" wo="0.75"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.001"/>
+    <nuclide name="S32" wo="0.001"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="29" name="m29">
+    <density value="1.04" units="g/cm3"/>
+    <nuclide name="H1" wo="0.105"/>
+    <nuclide name="C0" wo="0.114"/>
+    <nuclide name="N14" wo="0.025"/>
+    <nuclide name="O16" wo="0.75"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.001"/>
+    <nuclide name="S32" wo="0.001"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="30" name="m30">
+    <density value="1.04" units="g/cm3"/>
+    <nuclide name="H1" wo="0.105"/>
+    <nuclide name="C0" wo="0.114"/>
+    <nuclide name="N14" wo="0.025"/>
+    <nuclide name="O16" wo="0.75"/>
+    <nuclide name="Na23" wo="0.001"/>
+    <nuclide name="P31" wo="0.001"/>
+    <nuclide name="S32" wo="0.001"/>
+    <nuclide name="Cl35" wo="0.002"/>
+    <nuclide name="K39" wo="0.001"/>
+    <sab name="c_H_in_H2O"/>
+  </material>
+  <material id="255" name="m255">
+    <density value="0.0012" units="g/cm3"/>
+    <nuclide name="N14" wo="0.7555"/>
+    <nuclide name="O16" wo="0.232"/>
+    <nuclide name="Ar40" wo="0.013"/>
+  </material>
+</materials>
