@@ -3,11 +3,9 @@ import numpy as np
 import math
 names = ['Skeletal bone','Skin','Lungs','Brain','Spinal Cord','Red Bone Marrow','Liver','Kidneys','Testes','Urinary Bladder','Gallbladder','Heart','Salivary Glands','Thymus','Thyroid','Oesophagus','Spleen','Pancreas','Stomach','Adipose Tissue','Muscle Tissue','Breast','Eye Lenses','Eyes','Prostate','Adrenals','Small intenstine','Lower Colon','Upper Colon','Remainder','Air']
 
-Materials = openmc.Materials.from_xml('external_data/materials.xml')
+Materials = openmc.Materials.from_xml('../external_data/materials.xml')
 mats = dict(zip(names, Materials))
 #is all hydrogen in tissue in water? DNA, if not whats the actual fraction?
-
-root = openmc.Universe(name = 'root universe')
 
 side_length = 10  #cm
 minx = openmc.XPlane(x0=-side_length/2)
@@ -23,29 +21,33 @@ name = 'Muscle Tissue'
 tissue = openmc.Cell(name = name)
 tissue.fill = mats[name]
 tissue.region = cube_region
-root.add_cell(tissue)
 
 bound_sphere = -openmc.Sphere(r = side_length *2, boundary_type = 'vacuum')
 
 gap = openmc.Cell(name = 'gap')
-gap.region = bound_sphere
-root.add_cell(gap)
+gap.region = ~cube_region & bound_sphere
+
+root = openmc.Universe(universe_id = 0, name = 'root universe', cells = [tissue, gap])
 
 geom = openmc.Geometry(root)
 
-point = openmc.stats.Point(([-side_length/2,0,0]))
-src = openmc.IndependentSource(space=point, particle = 'photon', energy = openmc.stats.Discrete([2E4], [1.0]))
+#point = openmc.stats.Point(([-side_length/2,0,0]))
+point = openmc.stats.Point(([0,0,0]))
+src = openmc.IndependentSource(space=point,
+                               particle = 'photon',
+                               energy = openmc.stats.Discrete([2E4], [1.0]))
+
 
 settings = openmc.Settings()
 settings.photon_transport = True
 settings.run_mode = 'fixed source'
-settings.source = src
+settings.source = [src]
 settings.batches = 100
 #settings.inactive = 10
-settings.particles = 100000
+settings.particles = 10000
 
 mesh = openmc.RegularMesh()
-mesh.dimension = [100,100,100]
+mesh.dimension = [1]*3
 mesh.lower_left = [-side_length/2]*3
 mesh.upper_right= [side_length/2]*3
 
@@ -58,14 +60,10 @@ current.filters = [mesh_filter, part_filter]
 current.scores = ['current','flux']
 
 tally = openmc.Tally(name = 'reactions')
-tally.filters = [mesh_filter]
+tally.filters = [mesh_filter, part_filter]
 tally.scores = ['coherent-scatter','incoherent-scatter', 'photoelectric','pair-production','heating']
 
-heat_source = openmc.Tally(name = 'heat_source')
-heat_source.filters = [mesh_filter]
-heat_source.scores = ['coherent-scatter','incoherent-scatter']
-
-tallies = openmc.Tallies([current,tally,heat_source])
+tallies = openmc.Tallies([current,tally])
 
 plot = openmc.Plot()
 plot.pixels = (250,250)
@@ -75,8 +73,8 @@ plot.width = (4*side_length, 4*side_length)
 model = openmc.model.Model()
 model.materials = Materials
 model.geometry = geom
-model.settings = settings
 model.tallies = tallies
+model.settings = settings
 model.plots = openmc.Plots([plot])
 model.export_to_model_xml()
 
