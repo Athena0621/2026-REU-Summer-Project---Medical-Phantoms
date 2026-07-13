@@ -10,7 +10,6 @@
 
 #------------------------
 
-
 [Mesh]
   [Cube]
     type = GeneratedMeshGenerator

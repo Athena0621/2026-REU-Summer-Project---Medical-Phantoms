@@ -3,3 +3,5 @@ model.xml
 *.out
 *.png
 .ipynb_checkpoints/
+*out.e*
+*out.csv*

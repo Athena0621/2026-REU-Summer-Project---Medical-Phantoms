@@ -13,8 +13,7 @@ rxn_type = absorption
 
 [Adaptivity]
   marker = error_combo
-  steps = 2
-
+  steps = 4
   [Indicators]
     [optical_depth]
       type = ElementOpticalDepthIndicator
@@ -64,9 +63,8 @@ rxn_type = absorption
   [Tallies]
     [reactions]
       type = MeshTally
-
       score = '${rxn_type} flux fission'
-      name = 'interest flux fission'
+      name = 'interest flux fission' #interest used as name instead of rxn score name bc of referential 'confusion'
       output = 'unrelaxed_tally_std_dev unrelaxed_tally_rel_error'
       block = '0'
       check_tally_sum = false
@@ -104,6 +102,6 @@ rxn_type = absorption
 
 [Outputs]
   execute_on = 'timestep_end'
-  #exodus = true
-  #csv = true
+  exodus = true
+  csv = true
 []

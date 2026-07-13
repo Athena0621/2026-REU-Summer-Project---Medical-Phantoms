@@ -8,14 +8,12 @@ mats = dict(zip(names, Materials))
 #is all hydrogen in tissue in water? DNA, if not whats the actual fraction?
 
 side_length = 10  #cm
-minx = openmc.XPlane(x0=-side_length/2)
-maxx = openmc.XPlane(x0=side_length/2)
-miny = openmc.YPlane(y0=-side_length/2)
-maxy = openmc.YPlane(y0=side_length/2)
-minz = openmc.ZPlane(z0=-side_length/2)
-maxz = openmc.ZPlane(z0=side_length/2)
-
-cube_region = +minx&-maxx&+miny&-maxy&+minz&-maxz
+cube_region = -openmc.model.OrthogonalBox(
+  v = [-side_length/2]*3,
+  a1 = [side_length, 0,0],
+  a2 = [0,side_length,0],
+  a3 = [0,0,side_length]
+)
 
 name = 'Muscle Tissue'
 tissue = openmc.Cell(name = name)
@@ -36,7 +34,6 @@ point = openmc.stats.Point(([0,0,0]))
 src = openmc.IndependentSource(space=point,
                                particle = 'photon',
                                energy = openmc.stats.Discrete([2E4], [1.0]))
-
 
 settings = openmc.Settings()
 settings.photon_transport = True
