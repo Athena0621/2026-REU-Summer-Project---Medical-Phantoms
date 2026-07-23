@@ -17,7 +17,8 @@ dose_score = heating
   steps = 10
   [Indicators]
     [optical_depth]
-      type = ElementOpticalDepthIndicator
+      type = ElementOpticalDepthIndicator #try different indicators, elemoptdepth good for fission applications 
+#maybe GradientJumpIndicator?
       rxn_rate = '${rxn_type}'
       h_type = 'max'
     []
@@ -26,14 +27,14 @@ dose_score = heating
     [depth_frac]
       type = ErrorFractionMarker
       indicator = optical_depth
-      refine = 0.3
+      refine = 0.5 #can massively increase this
       coarsen = 0.0
     []
     [rel_error]
       type = ValueThresholdMarker
       invert = true
-      coarsen = 1e-1
-      refine = 5e-2
+      coarsen = 0.15
+      refine = 0.1 #can massively increase this
       variable = interest_rel_error
       third_state = DO_NOTHING
     []
@@ -51,7 +52,7 @@ dose_score = heating
 
 [Problem]
   type = OpenMCCellAverageProblem
-  particles = 50000 #number of particles to small for statistical hit, 1000000 works
+  particles = 200000 #number of particles to small for statistical hit, 1000000 works
   #inactive_batches = 50
   batches = 100
   
@@ -65,7 +66,7 @@ dose_score = heating
     [reactions]
       type = MeshTally
       score = '${rxn_type} ${dose_score} flux fission'
-      name = 'reaction interest flux fission' 
+      name = '${rxn_type} ${dose_score} flux fission' 
       output = 'unrelaxed_tally_std_dev unrelaxed_tally_rel_error'
       block = '0'
       check_tally_sum = false

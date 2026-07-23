@@ -8,13 +8,14 @@ mats = dict(zip(names, Materials))
 #is all hydrogen in tissue in water? DNA, if not whats the actual fraction?
 
 side_length = 10  #cm
-cube_region = -openmc.model.OrthogonalBox(
-  v = [-side_length/2]*3,
-  a1 = [side_length, 0,0],
-  a2 = [0,side_length,0],
-  a3 = [0,0,side_length]
-)
+minx = openmc.XPlane(x0=-side_length/2)
+maxx = openmc.XPlane(x0=side_length/2)
+miny = openmc.YPlane(y0=-side_length/2)
+maxy = openmc.YPlane(y0=side_length/2)
+minz = openmc.ZPlane(z0=-side_length/2)
+maxz = openmc.ZPlane(z0=side_length/2)
 
+cube_region = +minx&-maxx&+miny&-maxy&+minz&-maxz
 name = 'Muscle Tissue'
 tissue = openmc.Cell(name = name)
 tissue.fill = mats[name]
@@ -29,8 +30,8 @@ root = openmc.Universe(universe_id = 0, name = 'root universe', cells = [tissue,
 
 geom = openmc.Geometry(root)
 
-#point = openmc.stats.Point(([-side_length/2,0,0]))
-point = openmc.stats.Point(([0,0,0]))
+point = openmc.stats.Point(([-side_length/2,0,0]))
+#point = openmc.stats.Point(([0,0,0]))
 src = openmc.IndependentSource(space=point,
                                particle = 'photon',
                                energy = openmc.stats.Discrete([2E4], [1.0]))
@@ -70,7 +71,7 @@ plot.width = (4*side_length, 4*side_length)
 model = openmc.model.Model()
 model.materials = Materials
 model.geometry = geom
-model.tallies = tallies
+#model.tallies = tallies
 model.settings = settings
 model.plots = openmc.Plots([plot])
 model.export_to_model_xml()

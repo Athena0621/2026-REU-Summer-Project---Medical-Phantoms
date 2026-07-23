@@ -16,15 +16,15 @@
   [Cube]
     type = GeneratedMeshGenerator
     dim = 3
-    nx = 2
-    ny = 2
-    nz = 2
-    xmax = 5
-    ymax = 5
-    zmax = 5
-    xmin = -5
-    ymin = -5
-    zmin = -5
+    nx = 1
+    ny = 1
+    nz = 1
+    xmax = 35
+    ymax = 35
+    zmax = 100
+    xmin = -35
+    ymin = -35
+    zmin = -80
   []
 []
   

@@ -1,7 +1,9 @@
-model.xml
+*.xml
+!external_build/materials.xml
 *.h5
 *.out
 *.png
 .ipynb_checkpoints/
 *out.e*
 *out.csv*
+*Zone.Identifier*

@@ -26,14 +26,14 @@ dose_score = heating
     [depth_frac]
       type = ErrorFractionMarker
       indicator = optical_depth
-      refine = 0.3
+      refine = 0.2
       coarsen = 0.0
     []
     [rel_error]
       type = ValueThresholdMarker
       invert = true
-      coarsen = 1e-1
-      refine = 5e-2
+      coarsen = 10e-2
+      refine = 7e-2
       variable = interest_rel_error
       third_state = DO_NOTHING
     []
@@ -51,7 +51,7 @@ dose_score = heating
 
 [Problem]
   type = OpenMCCellAverageProblem
-  particles = 50000 #number of particles to small for statistical hit, 1000000 works
+  particles = 100000 #number of particles to small for statistical hit, 1000000 works
   #inactive_batches = 50
   batches = 100
   
